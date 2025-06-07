@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(225, 122, 187);
+}
+
+.header_text {
+    font-family: 'Nunito';
+    font-size: 30px;  /* Fixed typo from 30x to 30px */
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 400px;
+    margin-bottom: 0px;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #ffffff;
+    color: rgb(233, 48, 48);
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgb(240, 209, 235);
+    color: #fff;
+}
+
+/* Mobile adjustments for screens <= 768px (tablets and smaller devices) */
+@media only screen and (max-width: 768px) {
+    .header_text {
+        font-size: 24px;  /* Slightly smaller text for better fitting */
+        margin-top: 20px;
+    }
+
+    .gif_container img {
+        max-width: 90%;  /* Allowing the GIF to fill up more of the available width */
+        max-height: 50vh;  /* Shrink the image to fit better */
+    }
+
+    .buttons {
+        margin-top: 50px;  /* Reduce space between header and buttons */
+    }
+
+    .btn {
+        padding: 12px 24px;  /* Slightly smaller button padding */
+        font-size: 14px;  /* Reduce font size */
+    }
+}
+
+/* Extra adjustments for smaller mobile devices ( <= 414px) */
+@media only screen and (max-width: 414px) {
+    .header_text {
+        font-size: 20px;  /* Further reduce font size */
+        margin-top: 10px;
+    }
+
+    .gif_container img {
+        max-width: 100%;  /* Let the GIF fill the screen width */
+        max-height: 45vh;  /* Make the image a bit smaller on extra small screens */
+    }
+
+    .buttons {
+        margin-top: 40px;  /* Move buttons even lower to avoid overlap */
+    }
+
+    .btn {
+        padding: 8px 16px;  /* Further reduce button size */
+        font-size: 12px;  /* Reduce button font size */
+    }
+}
