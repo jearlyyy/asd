@@ -47,8 +47,8 @@ body {
     }
 
     .gif_container img {
-        max-width: 200%;  /* Allowing the GIF to fill up more of the available width */
-        max-height: 160vh;  /* Shrink the image to fit better */
+        max-width: 90%;  /* Allowing the GIF to fill up more of the available width */
+        max-height: 50vh;  /* Shrink the image to fit better */
     }
 
     .buttons {
